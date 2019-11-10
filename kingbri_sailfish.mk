@@ -4,8 +4,11 @@ $(call inherit-product, device/google/marlin/aosp_sailfish.mk)
 # Inherit proprietary blobs
 $(call inherit-product, vendor/google/sailfish/sailfish-vendor.mk)
 
-# Inherit Gahs vendor configuration
+# Inherit kingbri vendor configuration
 $(call inherit-product, vendor/kingbri/config/common.mk)
+
+# Export target device
+export TARGET_DEVICE := sailfish
 
 PRODUCT_NAME := kingbri_sailfish
 PRODUCT_BRAND := google

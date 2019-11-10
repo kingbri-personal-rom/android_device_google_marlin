@@ -7,6 +7,9 @@ $(call inherit-product, vendor/google/marlin/marlin-vendor.mk)
 # Inherit kingbri vendor configuration
 $(call inherit-product, vendor/kingbri/config/common.mk)
 
+# Export target device
+export TARGET_DEVICE := marlin
+
 PRODUCT_NAME := kingbri_marlin
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
